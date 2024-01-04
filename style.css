@@ -1,0 +1,444 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing:border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height:100vh;
+    width: 100vw;
+    background-color: #fff;
+    background-image: url('./home.jpg');
+    background-size: cover;
+}
+#page > img{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    
+    width: 30%;
+    transform: translateY(30%);
+}
+#page>#nav{
+    position:absolute;
+    height: 8%;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>img{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: static;
+    height: 100%;
+}
+#center-nav{
+    padding: 18px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+
+    position:absolute;
+    left: 60%;
+    top: 45%;
+    background-color: #9B2241;
+}
+#center-nav>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+    font-size: 25px;
+    transition: all 0.4s;
+}
+#center-nav>a:hover{
+    text-decoration: underline;
+    font-weight: 900;
+}
+#text{
+    height: 75%;
+    width: 40%;
+    position: relative;
+    /* background-color: #A2D2F8; */
+    top:15%;
+    left: 12%;
+    padding: 120px 30px;
+}
+#text>h1{
+    font-size: 70px;
+    margin: 12px;
+}
+#text>h4{
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+#text>h5{
+    font-size: 20px;
+    color: #9B2241;
+    transform: rotate(-20deg);
+    position: absolute;
+    left: 3%;
+}
+#buttons{
+    margin-top:30px;
+    position: absolute;
+    display: flex;
+}
+#buttons>form>#linkedIn{
+    margin-left: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color:#0A66C2;
+    font-size: 15px;
+    color: white;
+    border: none;
+    transition: all 0.4s;
+}
+#buttons>form>#github{
+    margin-left: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: all 0.4s;
+}
+#buttons>form>#leetcode{
+    margin-left: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: all 0.4s;
+}
+.ri-linkedin-box-fill, .ri-github-fill{
+    font-size: 25px;
+}
+
+#buttons>form>#linkedIn:hover{
+    background-color: #fff;
+    color: black;
+    border:1px solid black;
+    cursor: pointer;
+}
+
+#buttons>form>#github:hover{
+    background-color: #fff;
+    color: black;
+    border:1px solid black;
+    cursor: pointer;
+}
+#buttons>form>#leetcode:hover{
+    background-color: #fff;
+    color: black;
+    border:1px solid black;
+    cursor: pointer;
+}
+#page1{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+}
+#page1>#left{
+    background-color:#9B2241;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+#page1>#right{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    margin: 2.5%;
+}
+#page1>#right>.box{
+    height: 50%;
+    width: 100%;
+}
+#page1>#left>.text{
+    position: relative;
+    height: 70%;
+    width: 70%;
+    top:15%;
+    left: 15%;
+    /* background-color: #fff; */
+}
+#page1>#left>.text>h1{
+    padding: 5%;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+#page1>#left>.text>p{
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+}
+#page1>#left>form>button{
+    position: absolute;
+    left: 40%;
+    margin-top: 3%;
+    padding: 2%;
+    background-color:white;
+    color:black;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+    transition: all 0.4s;
+}
+#page1>#left>form>button:hover{
+    box-shadow: 8px 8px 8px black;
+    color: black;
+    cursor: pointer;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+     background-image: url('./skills.jpg');
+    background-size: cover; 
+}
+#page2>h1{
+    position: absolute;
+    width: 100%;
+    margin-top: 1.5%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:1.5% ;
+}
+#page2>.section{
+    margin: 5%;
+}
+#page2>.section>.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #11a372;
+    padding: 0px 0px 20px 30px;
+}
+#page2>.section>.contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+#page2>.section>.contents>.content{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+#page2>.section>.contents>.content:hover{
+    box-shadow: 0px 8px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+#page2>.section>.contents>.content:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid #11a372;
+}
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./projects.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+#page3>.box{
+    height: 50%;
+    width: 31%;
+    position: relative;
+    background-color: transparent;
+    border-top: 5px solid #9B2241;
+}
+#page3>.box>.heading{
+    height: 30%;
+    width: 100%;
+    /* background-color: #A2D2F8; */
+    font-size: 30px;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+#page3>.box>.heading>form>button{
+
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius:45%;
+    background-color: #0A66C2;
+    color: #fff;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#page3>.box>video{
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #9B2241;
+}
+.p1{
+    position: relative;
+    top: 35%;
+}
+.p2{
+    position: relative;
+    top: 10%;
+}
+.p3{
+    position: relative;
+    top: -20%;
+}
+#page3>.projects{
+    position: absolute;
+    top: 15%;
+}
+#page3>.projects>h1{
+    font-size: 70px;
+}
+#page3>.projects>h5{
+    font-size: 25px;
+    transform: rotate(-20deg);
+    padding-bottom: 20px;
+    left:3%;
+    color: #9B2241;
+}
+#page4{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./contact.jpg');
+    background-size: cover;
+}
+#page4>.contact{
+    background-color: #FEF4ED;
+    height: 70%;
+    width: 45%;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    box-shadow: 0px 8px 15px 0px #919191;
+    border: 1px solid transparent;
+}
+#page4>.contact>h1{
+    margin: 5%;
+    text-align: center;
+    font-size: 50px;
+    color: #a86545;
+}
+#page4>.contact>h1>hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:#a86545;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 175px;
+    color: #a86545;
+}
+#page4>.contact>h4{
+    margin: 5%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
+#page4>.contact>form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    left: 20%;
+}
+#page4>.contact>form>button{
+    width: 25%;
+    position: relative;
+    left: 18%;
+    margin-top: 2%;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border-radius: 50px;
+    background: linear-gradient(200deg,#a86545,#e6dac6) ;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+}
+#page4>.contact>form>button:hover{
+    box-shadow: 0px 5px 10px 0px #a86545;
+
+}
+#page4>.contact>form>textarea{
+    width: 400px;
+    height: 100px;
+    margin-top: 2%;
+    padding-top:15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    text-align: center;
+    color: #a86545;
+}
+#page4>.contact>form>.inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #a86545;
+    border-radius: 50px;
+    margin-top: 2%;
+    text-align: center;
+}
+#page4>.contact>form>.inputs:focus{
+    border: 2px solid #a86545;
+}
+#page4>.contact>form>.inputs:hover{
+    border: 2px solid #a86545;
+}
+#page4>.contact>form>textarea:focus{
+    border: 2px solid #a86545;
+}
+#page4>.contact>form>textarea:hover{
+    border: 2px solid #a86545;
+}
+#page4>.contact>form>.inputs::placeholder{
+    color: #a86545;
+}   
+#page4>.contact>form>textarea::placeholder{
+    color: #a86545;
+}  
