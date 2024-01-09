@@ -1,0 +1,50 @@
+@media screen and (max-width:1460px){
+    #center-nav>a{
+        font-size: 20px;
+    }
+    #center-nav{
+        padding: 15px;
+        width: 80%;
+    }
+    #page>#text>h1{
+        font-size: 50px;
+    }
+}
+@media  screen and (max-width:1280px) {
+    #text>#buttons>form>button>span{
+        display: none;
+    }
+    #text>#buttons>form>button{
+        padding: 10px;
+    }
+    #page1{
+    }
+    #page1>#left>.text{
+        top: 5%;
+        height: 55%;
+    }
+    #page1>#left>form>button{
+        margin-top:0px;
+    }
+    #page1>#right>img{
+        width: 500px;
+    }
+    #page1>#left>.text>h1{
+       font-size: 40px;
+    }
+    #page1>#left>.text>p{
+        font-size: 18px;
+     }
+}
+@media screen and (max-width:1180px) {
+    #page>#nav{
+       padding-right: 50px;
+    }
+    #nav-toggle{
+        display:contents;
+        
+    } 
+    #center-nav{
+        display: none;
+    }
+}
