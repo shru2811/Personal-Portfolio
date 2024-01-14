@@ -178,6 +178,9 @@
     #page{
         height: 120vh;
     }
+    #page>#text>h1{
+        font-size: 20px;
+    }
     #page>#nav>.sidebar{
         border-bottom-left-radius: none;
         border-top-left-radius: none;
