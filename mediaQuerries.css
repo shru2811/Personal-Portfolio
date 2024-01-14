@@ -1,19 +1,19 @@
 @media screen and (max-width:1460px){
-    #center-nav>a{
-        font-size: 20px;
+    #page>#nav>.sidebar>#center-nav>ul>li>a{
+        font-size: 18px;
     }
-    #center-nav{
-        padding: 15px;
-        width: 80%;
-    }
-    #page>#text>h1{
+    #page>#front>#text>h1{
         font-size: 50px;
+    }
+    #page2{
+        height: 110vh;
     }
 }
 @media  screen and (max-width:1280px) {
     #text>#buttons>form>button>span{
         display: none;
     }
+    
     #text>#buttons>form>button{
         padding: 10px;
     }
@@ -21,10 +21,9 @@
     }
     #page1>#left>.text{
         top: 5%;
-        height: 55%;
     }
     #page1>#left>form>button{
-        margin-top:0px;
+        margin-top:20px;
     }
     #page1>#right>img{
         width: 500px;
@@ -35,16 +34,207 @@
     #page1>#left>.text>p{
         font-size: 18px;
      }
+     #page2{
+        height: 110vh;
+    }
 }
 @media screen and (max-width:1180px) {
-    #page>#nav{
-       padding-right: 50px;
+    
+    #page2{
+        height: 110vh;
     }
-    #nav-toggle{
-        display:contents;
+    #page4{
         
+    }
+    #page4>.contact{
+    }
+    #page4>.contact>form>button{
+        width: 50%;
+        left: 0%;
+    }
+    #page4>.contact>h1{
+        font-size: 45px;
+    }
+    #page4>.contact>h4{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    #page{
+        height: 150vh;
+    }
+    #page>#nav{
+        height: 5%;
+    }
+    #page>#nav>img{
+        position: relative;
+        height: 100%;
+    }
+    #page>#nav>.sidebar{
+        position: relative;
+        height: 100%;   
+        width: 50%;
+        padding-left: 2%;
+        padding-top: 1.5%;
+    }
+    #page>#front{
+        margin-top: none;
+        flex-direction: column-reverse;
+    }
+    #page>#front>.me>img{
+        height: 500px;
+        width: 500px;
+        margin-left: 0px;
+    }
+    #page>#front>.me{
+        align-items: center;
+        justify-content: center;
+    }
+    #page>#front>#text>h1{
+        font-size: 45px;
+    }
+    #page>#front>#text>h4{
+        font-size: 15px;
+    }
+    #page>#front>.me>img{
+        right: 0%;
+        transform: none;
+    }
+    #page1{
+        height: 150vh;
+        flex-direction: column-reverse;
+    }
+    #page1>#right{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+    }
+    #page1>#right>img{
+        height: 75%;
+    }
+    #page1>#left{
+        width: 100%;
+        height: 100%;
+    }
+    #page1>#left>.text>p{
+        font-size: 15px;
+    }
+    #page2{
+        height: 200vh;
+    }
+    #page2>h1{
+        margin-bottom: 0px;
+    }
+    #page2>.sections>.section{
+        margin-top: 5%;
+    }
+    #page2>.sections{
+        flex-direction: column-reverse;
+    }
+    #page3{
+        /* background-color: #106786 ;*/
+        height: 160vh;
+    }
+    #page3>.cols{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #page3>.cols>.row>.v{
+        margin-top:20px ;
+    }
+    #page3>.cols>.v1{
+        position: relative;
+        display: block;
+    }
+    #page3>.cols>.v2{
+        position: relative;
+        left: 0%;
     } 
-    #center-nav{
-        display: none;
+    #page4{
+        height: 120vh;
+    }
+    #page4>.contact{
+        width: 80%;
+    }
+}
+@media  screen and (max-width:800px) {
+    #page>#nav>.sidebar{
+        width: 80%;
+    }
+    #page>#nav>.sidebar>#center-nav>ul{
+        padding-top: 2%;
+    }
+    #page>#nav>.sidebar>#center-nav>ul>li>a{
+        font-size:15px ;
+    }
+}
+@media screen and (max-width:500px){
+    #page{
+        height: 120vh;
+    }
+    #page>#nav>.sidebar{
+        border-bottom-left-radius: none;
+        border-top-left-radius: none;
+        width: 80%;
+    }
+    #page>#nav>img{
+        width: 20%;
+    }
+    #page>#nav>.sidebar>#center-nav>ul>li>a{
+        font-size: 12px ;
+    }
+    #page>#front>.me>img{
+        width: 80%;
+        height: 80%;
+        margin-top: 10%;
+    }
+
+    #page3>.cols>.row>.projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #page3>.cols>.row>.v{
+        display: flex;
+        flex-direction: column;
+    }
+    #page3>.cols>.row>.v>video{
+        width: 95%;
+    }
+    #page3>.cols>.row>.v>.heading{
+        width: 95%;
+    }
+    #page3>.cols>.v2>video{
+        width: 95%;
+    }
+    #page3>.cols>.v2>.heading{
+        width: 95%;
+    }
+    #page3>.cols>.v3>video{
+        width: 95%;
+    }
+    #page3>.cols>.v3>.heading{
+        width: 95%;
+    }
+    #page4>.contact{
+        margin-top: 2%;
+        height: 65%;
+    }
+    #page4>.contact>form>button{
+        font-size: 10px;
+        width: 50%;
+        left:0%;
+        margin-top: 5%;
+    }
+    #page4>.contact>h4{
+        font-size: 15px;
     }
 }
